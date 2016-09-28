@@ -1,0 +1,9 @@
+DEPENDENCIES
+  system
+    path: cookbooks/system
+  ufw
+    path: cookbooks/ufw
+
+GRAPH
+  system (0.1.0)
+  ufw (0.1.0)

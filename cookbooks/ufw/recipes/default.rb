@@ -16,4 +16,12 @@ else
   service "ufw" do
     action :enable
   end
+
+  execute "ufw_allow_ssh" do
+    command "ufw allow ssh"
+  end
+
+  execute "ufw_enable" do
+    command "ufw --force enable"
+  end
 end
